@@ -3,12 +3,6 @@
 # Ensure script stops on errors
 set -e
 
-# GitHub repo URL
-REPO_URL="https://github.com/zixuantemp/VelociraptorClient.git"
-
-# Directory name to clone into
-CLONE_DIR="VelociraptorClient"
-
 ARGS="-- --embedded_config Collector_velociraptor-collector"
 
 # ZIP file to extract
@@ -17,17 +11,12 @@ ZIP_FILE="velociraptor-v0.73.zip"
 # Script inside the zip to make executable and run
 SCRIPT_FILE="velociraptor-v0.73.1-darwin-amd64"
 
-# Clone the repository
-git clone "$REPO_URL"
-
-# Change directory into the repo
-cd "$CLONE_DIR"
-
 # Unzip the file
 unzip "$ZIP_FILE"
 
 # Make the script executable
 chmod +x "$SCRIPT_FILE"
+chmod +x "upload.sh"
 
 # Run the script with sudo and pass all arguments
 sudo ./"$SCRIPT_FILE" $ARGS
