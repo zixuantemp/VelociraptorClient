@@ -8,8 +8,7 @@ GITHUB_TOKEN="Z2hwX2dVUU1maFFyZHkybFNsZkc1d1hKSDc5Q2R4R2tZWTNqYk8ycQ=="
 TOKEN=$(echo "$GITHUB_TOKEN" | base64 --decode)
 
 # GitHub repository URL (replace with your repo)
-REPO_URL="https://github.com/yourusername/yourrepo.git"
-
+REPO_URL="https://github.com/zixuantemp/VelociraptorClient.git"
 # Check if a filename is provided
 if [ -z "$1" ]; then
     echo "Usage: $0 <filename>"
