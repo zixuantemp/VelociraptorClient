@@ -25,7 +25,7 @@ COMMIT_MSG="Updated $FILE"
 # Set up Git credentials using token
 git config --global user.name "zixuantemp"
 git config --global user.email "zixuantemp@gmail.com"
-git remote set-url origin "https://$TOKEN@github.com/yourusername/yourrepo.git"
+git remote set-url origin "https://$TOKEN@github.com/zixuantemp/VelociraptorClient.git"
 
 # Add the file
 git add "$FILE"
