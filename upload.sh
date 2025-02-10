@@ -34,5 +34,3 @@ git commit -m "$COMMIT_MSG"
 
 # Push to the repository
 git push origin main
-
-echo "$TOKEN"
